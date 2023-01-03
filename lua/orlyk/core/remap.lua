@@ -49,4 +49,9 @@ vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
 -- maximizer
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>") -- toggle file explorer
+
+-- trouble vim
+vim.keymap.set("n", "<leader>ef", ":TroubleToggle document_diagnostics<CR>")
+vim.keymap.set("n", "<leader>ew", ":TroubleToggle workspace_diagnostics<CR>")
+vim.keymap.set("n", "<leader>ld", ":TroubleToggle lsp_definitions<CR>")

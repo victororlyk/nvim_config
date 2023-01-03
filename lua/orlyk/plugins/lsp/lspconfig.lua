@@ -109,3 +109,21 @@ lspconfig["sumneko_lua"].setup({
     },
   },
 })
+
+lspconfig["rust_analyzer"].setup({
+    imports = {
+        granularity = {
+            group = "module",
+        },
+        prefix = "self",
+    },
+    cargo = {
+        buildScripts = {
+            enable = true,
+        },
+    },
+    procMacro = {
+        enable = true
+    },
+})
+

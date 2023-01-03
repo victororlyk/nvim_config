@@ -6,7 +6,7 @@ end
 
 -- for conciseness
 local formatting = null_ls.builtins.formatting -- to setup formatters
--- local diagnostics = null_ls.builtins.diagnostics -- to setup linters
+local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 local code_actions = null_ls.builtins.code_actions -- to setup linters
 
 -- to setup format on save
@@ -18,6 +18,7 @@ null_ls.setup({
     sources = { --  to disable file types use
     --  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
     formatting.prettier, -- js/ts formatter
+    formatting.rustfmt, -- rust formatting
     formatting.stylua, -- lua formatter
     code_actions.eslint_d.with({
         condition  = function(utils)
