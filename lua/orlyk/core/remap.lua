@@ -55,3 +55,18 @@ vim.keymap.set("n", "<leader>pv", ":NvimTreeToggle<CR>") -- toggle file explorer
 vim.keymap.set("n", "<leader>ef", ":TroubleToggle document_diagnostics<CR>")
 vim.keymap.set("n", "<leader>ew", ":TroubleToggle workspace_diagnostics<CR>")
 vim.keymap.set("n", "<leader>ld", ":TroubleToggle lsp_definitions<CR>")
+
+-- vimspector debugger
+vim.keymap.set('n', "Db", ":call vimspector#ToggleBreakpoint()<cr>")
+vim.keymap.set('n', "Dw", ":call vimspector#AddWatch()<cr>")
+vim.keymap.set('n', "De", ":call vimspector#Evaluate()<cr>")
+
+vim.keymap.set("n", "<leader>8", ":TagbarToggle<CR>")
+
+-- git
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+

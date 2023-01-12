@@ -50,6 +50,7 @@ return require('packer').startup(function(use)
     }
     use('theprimeagen/harpoon')
 
+    use('shaunsingh/nord.nvim')
     use('bluz71/vim-nightfly-colors')
     use('nvim-treesitter/nvim-treesitter', {
         run = ':TSUpdate'
@@ -73,8 +74,18 @@ return require('packer').startup(function(use)
     use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
     use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
 
+    use('simrat39/rust-tools.nvim')
+    -- Visualize lsp progress
+    use({
+        "j-hui/fidget.nvim",
+        config = function()
+            require("fidget").setup()
+        end
+    })
+    --debugging
+    use('puremourning/vimspector')
+
     --error handling
-    -- Lua
     use {
         "folke/trouble.nvim",
         requires = "kyazdani42/nvim-web-devicons",
@@ -117,9 +128,10 @@ return require('packer').startup(function(use)
     use('nvim-tree/nvim-tree.lua')
     use('nvim-tree/nvim-web-devicons')
 
+    use('preservim/tagbar')
+
     -- statusline
     use('nvim-lualine/lualine.nvim')
-
 
     -- auto  closing
     use('windwp/nvim-autopairs')

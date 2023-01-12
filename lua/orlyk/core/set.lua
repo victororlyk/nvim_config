@@ -44,3 +44,5 @@ vim.opt.backspace = "indent,eol,start"
 -- split windows 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+vim.opt.foldlevel = 20

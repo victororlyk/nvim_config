@@ -26,6 +26,6 @@ lualine_nightfly.command = {
 
 lualine.setup({
     options = {
-        theme = lualine_nightfly
+        theme = 'nord'
     }
 })
