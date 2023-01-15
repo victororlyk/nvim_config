@@ -11,13 +11,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<leader>y", [["+y]])
 vim.keymap.set("n", "<c-u>", "<c-u>zz")
 
-vim.keymap.set("n", "<leader>vwm", function()
-    require("vim-with-me").startvimwithme()
-end)
-vim.keymap.set("n", "<leader>svwm", function()
-    require("vim-with-me").StopVimWithMe()
-end)
-
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -41,10 +34,10 @@ vim.keymap.set("n", "<leader>se", "<C-w>=")
 vim.keymap.set("n", "<leader>sx", ":close<CR>")
 
 -- tabs
-vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
-vim.keymap.set("n", "<leader>tx", ":tabclose<CR>")
-vim.keymap.set("n", "<leader>tn", ":tabn<CR>")
-vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
+-- vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
+-- vim.keymap.set("n", "<leader>tx", ":tabclose<CR>")
+-- vim.keymap.set("n", "<leader>tn", ":tabn<CR>")
+-- vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
 
 -- maximizer
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
@@ -66,7 +59,9 @@ vim.keymap.set("n", "<leader>8", ":TagbarToggle<CR>")
 -- git
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
 
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+--buffers
+vim.keymap.set("n", "<leader>bn", ":bn<CR>");
+vim.keymap.set("n", "<leader>bp", ":bp<CR>");
+
+
 

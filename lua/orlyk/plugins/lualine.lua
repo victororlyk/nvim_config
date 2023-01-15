@@ -3,7 +3,7 @@ if not status then
     return
 end
 
-local lualine_nightfly = require("lualine.themes.nightfly")
+local lualine_nord = require("lualine.themes.nord")
 
 local new_colors = {
     blue = "#65D1FF",
@@ -13,10 +13,10 @@ local new_colors = {
     black = "#000000",
 }
 
-lualine_nightfly.normal.a.bg = new_colors.blue
-lualine_nightfly.insert.a.bg = new_colors.green
-lualine_nightfly.visual.a.bg = new_colors.violet
-lualine_nightfly.command = {
+lualine_nord.normal.a.bg = new_colors.blue
+lualine_nord.insert.a.bg = new_colors.green
+lualine_nord.visual.a.bg = new_colors.violet
+lualine_nord.command = {
     a = {
         gui = "bold",
         bg = new_colors.yellow,

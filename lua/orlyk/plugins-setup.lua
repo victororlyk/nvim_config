@@ -48,10 +48,8 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = {{'nvim-lua/plenary.nvim'}}
     }
-    use('theprimeagen/harpoon')
 
     use('shaunsingh/nord.nvim')
-    use('bluz71/vim-nightfly-colors')
     use('nvim-treesitter/nvim-treesitter', {
         run = ':TSUpdate'
     })
@@ -116,6 +114,8 @@ return require('packer').startup(function(use)
     use('christoomey/vim-tmux-navigator')
 
     use("szw/vim-maximizer") -- maximizes and restores current window
+    -- using packer.nvim
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
     -- essential 
     use('tpope/vim-surround')
@@ -131,7 +131,10 @@ return require('packer').startup(function(use)
     use('preservim/tagbar')
 
     -- statusline
-    use('nvim-lualine/lualine.nvim')
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 
     -- auto  closing
     use('windwp/nvim-autopairs')
